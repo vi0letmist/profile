@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+body, html {
+    height: calc(100% - 2em);
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+        
+    background: #4a00fb;
+    background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
+    background: -webkit-linear-gradient(45deg, #4a00fb 0%,#e600ff 100%);
+    background: linear-gradient(45deg, #4a00fb 0%,#e600ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a00fb', endColorstr='#e600ff',GradientType=1 );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.kiri {
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 40px;
+    padding: 2em;
+}
+
+.kiri img {
+	opacity: 0.5;
+    width: 100%;
+    cursor: pointer;
+}
+
+/*.kiri figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+}*/
+
+
+
+.kanan {
+    background: #fff;
+    padding: 1em 1.4em;
+}
+
+.kanan h1 {
+    margin: 0;
+}
+
+.kanan p {
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+
+.cta {
+    display: block;
+    color: #fff;
+    background: #0E7FFF;
+    text-decoration: none;
+    padding: 8px 40px;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 32px;
+    margin: 2em 0;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        display: grid;
+        grid-template-columns: 30% auto;
+        padding: 3em;
+    }
+
+    .kiri img {
+        
+    }
+
+    .kiri {
+        background: #DCE1F6;
+        grid-template-columns: auto;
+        grid-template-rows: 30% auto;
+        padding: 0;
+    }
+
+    .kanan {
+        padding: 5em;
+        background: white url('/svg/bg.svg') no-repeat bottom right;
+        background-size: 70%;
+    }
+    /*.kiri figcaption {
+        text-align: center;
+        color: #000;
+    }*/
+
+    .cta {
+        display: inline-block;
+        font-size: 1.3em;
+        padding: .8em 3em;
+    }
+
+    .kanan h1 {
+        font-size: 3em;
+        margin-top: 2em;
+    }
+
+    .kanan p {
+        font-size: 1.5em;
+    }
+
+}
